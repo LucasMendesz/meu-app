@@ -1,6 +1,7 @@
 const Artigo = () => {
   return (
     <article>
+      {/* AQUI É COMENTÁRIO DENTRO DO JSX */}
       <h3>Título</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fuga
