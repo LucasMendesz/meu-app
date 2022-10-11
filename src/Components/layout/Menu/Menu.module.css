@@ -1,0 +1,34 @@
+.menu {
+  line-height: 40px;
+  background-color: #262626;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  list-style: none;
+  margin: 10px;
+  display: inline;
+}
+
+.li a {
+  padding: 5px 10px;
+  margin: 0;
+  border: 0px solid #f00;
+  background: #4ba3c3;
+  text-decoration: none;
+  color: #f7f7f7;
+  /* cantos arredondados */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+li a:hover {
+  background: #ccc;
+  color: #262626;
+  border-color: #262626;
+}

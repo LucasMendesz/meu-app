@@ -1,8 +1,8 @@
-import Menu from "../Menu";
-
+import Menu from "../Menu/Menu";
 const estilos = {
-  color: "white",
-  backgroundColor: "Black",
+  color: "#262626",
+  backgroundColor: "#f7f7f7",
+  textTransform: "uppercase",
 };
 
 const Cabecalho = () => {
@@ -10,7 +10,12 @@ const Cabecalho = () => {
     /* CSS IN JS */
 
     /* CSS inline (usa propriedade style e sintaxe de objeto) */
-    <header style={{ backgroundColor: "purple", textAlign: "center" }}>
+    <header
+      style={{
+        backgroundColor: "#f7f7f7",
+        textAlign: "center",
+      }}
+    >
       <h1 style={estilos}>Interface React</h1>
       <Menu />
     </header>
