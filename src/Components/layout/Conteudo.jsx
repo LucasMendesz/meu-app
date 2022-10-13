@@ -1,6 +1,27 @@
 import Artigo from "../Artigo";
 const Conteudo = () => {
-  const cursos = ["HTML", "CSS3", "JavaScript", "ReactJS", "NodeJS", "PHP"];
+  const artigos = [
+    {
+      titulo: "Artigo 1",
+      subtitulo: "Esse é o subtitulo do artigo... 1",
+      texto: "Esse é o conteúdo blablabla do artigo 1....",
+      curso: "HTML",
+    },
+
+    {
+      titulo: "Artigo 2",
+      subtitulo: "Esse é o subtitulo do artigo... 2",
+      texto: "Esse é o conteúdo blablabla do artigo 2....",
+      curso: "CSS3",
+    },
+
+    {
+      titulo: "Artigo 3",
+      subtitulo: "Esse é o subtitulo do artigo... 3",
+      texto: "Esse é o conteúdo blablabla do artigo 3....",
+      curso: "JavaScript",
+    },
+  ];
 
   return (
     <main>
@@ -22,28 +43,17 @@ const Conteudo = () => {
           dolore.
         </p>
 
-        <Artigo titulo="Artigo 1" cursos={cursos[0]}>
-          Este é o texto do primeiro artigo....
-        </Artigo>
-
-        <Artigo titulo="Artigo 2" cursos={cursos[1]}>
-          Este é o texto do segundo artigo....
-        </Artigo>
-
-        <Artigo titulo="Artigo 3" cursos={cursos[2]}>
-          Este é o texto do terceiro artigo....
-        </Artigo>
-
-        <Artigo subtitulo="Artigo 4" cursos={cursos[3]}>
-          Este é o texto do quarto artigo....
-        </Artigo>
-        <Artigo subtitulo="Artigo 5" cursos={cursos[4]}>
-          Este é o texto do quinto artigo....
-        </Artigo>
-
-        <Artigo subtitulo="Artigo 6" cursos={cursos[5]}>
-          Este é o texto do sexto artigo....
-        </Artigo>
+        {artigos.map((artigo) => {
+          return (
+            <Artigo
+              titulo={artigo.titulo}
+              subtitulo={artigo.subtitulo}
+              cursos={artigo.curso}
+            >
+              {artigo.texto}
+            </Artigo>
+          );
+        })}
       </section>
     </main>
   );
