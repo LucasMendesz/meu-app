@@ -1,6 +1,8 @@
 import Menu from "../Menu";
 const Cabecalho = () => {
-  const exemplo2 = () => {};
+  const exemplo2 = () => {
+    console.log("Exemplo 2");
+  };
   return (
     <header>
       <button onClick={() => console.log("exemplo 1")}>Exemplo 1</button>
