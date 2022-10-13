@@ -34,13 +34,14 @@ const Conteudo = () => {
           Este é o texto do terceiro artigo....
         </Artigo>
 
-        <Artigo titulo="Artigo 4" cursos={cursos[3]}>
+        <Artigo subtitulo="Artigo 4" cursos={cursos[3]}>
           Este é o texto do quarto artigo....
         </Artigo>
-        <Artigo titulo="Artigo 5" cursos={cursos[4]}>
+        <Artigo subtitulo="Artigo 5" cursos={cursos[4]}>
           Este é o texto do quinto artigo....
         </Artigo>
-        <Artigo titulo="Artigo 6" cursos={cursos[5]}>
+
+        <Artigo subtitulo="Artigo 6" cursos={cursos[5]}>
           Este é o texto do sexto artigo....
         </Artigo>
       </section>
