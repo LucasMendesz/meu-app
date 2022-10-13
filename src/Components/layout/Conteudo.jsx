@@ -1,6 +1,6 @@
 import Artigo from "../Artigo";
 const Conteudo = () => {
-  const cursos = ["HTML", "CSS3", "JavaScript"];
+  const cursos = ["HTML", "CSS3", "JavaScript", "ReactJS", "NodeJS", "PHP"];
 
   return (
     <main>
@@ -34,9 +34,15 @@ const Conteudo = () => {
           Este é o texto do terceiro artigo....
         </Artigo>
 
-        <Artigo titulo="Artigo 4">Este é o texto do quarto artigo....</Artigo>
-        <Artigo titulo="Artigo 5">Este é o texto do quinto artigo....</Artigo>
-        <Artigo titulo="Artigo 6">Este é o texto do sexto artigo....</Artigo>
+        <Artigo titulo="Artigo 4" cursos={cursos[3]}>
+          Este é o texto do quarto artigo....
+        </Artigo>
+        <Artigo titulo="Artigo 5" cursos={cursos[4]}>
+          Este é o texto do quinto artigo....
+        </Artigo>
+        <Artigo titulo="Artigo 6" cursos={cursos[5]}>
+          Este é o texto do sexto artigo....
+        </Artigo>
       </section>
     </main>
   );
