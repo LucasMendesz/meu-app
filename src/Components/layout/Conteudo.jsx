@@ -1,9 +1,25 @@
+import { useState } from "react";
 import Artigo from "../Artigo";
 const Conteudo = () => {
+  const [corFundo, setCorFundo] = useState();
+  const [contador, setContador] = useState(0);
+
+  const fundoAmarelo = () => setCorFundo("#FFFF00");
+  const fundoAzul = () => setCorFundo("#000080");
+  const fundoVermelho = () => setCorFundo("#FF0000");
+
+  const atualizaContagem = () => setContador(contador + 1);
+
   return (
-    <main>
+    <main style={{ backgroundColor: corFundo }}>
+      <button onMouseOver={fundoAmarelo}>Amarelo</button>
+      <button onMouseOver={fundoVermelho}>Vermelho</button>
+      <button onMouseOver={fundoAzul}>Azul</button>
       <section>
-        <h2>Conteúdo do site...</h2>
+        <hr />
+        <button onClick={atualizaContagem}>Contador: {contador}</button>
+
+        <h2>Não temos título</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est mollitia
           facilis omnis non, eaque repudiandae deleniti aspernatur corporis
