@@ -46,14 +46,9 @@ const Conteudo = () => {
           dolore.
         </p>
 
-        {artigos.map((artigo) => (
-          <Artigo
-            key={artigo.id}
-            titulo={artigo.titulo}
-            subtitulo={artigo.subtitulo}
-            cursos={artigo.curso}
-          >
-            {artigo.texto}
+        {artigos.map(({ id, titulo, subtitulo, curso, texto }) => (
+          <Artigo key={id} titulo={titulo} subtitulo={subtitulo} cursos={curso}>
+            {texto}
           </Artigo>
         ))}
       </section>
