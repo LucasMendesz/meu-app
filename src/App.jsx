@@ -7,10 +7,19 @@ import Rodape from "./Components/layout/Rodape";
 const App = () => {
   return (
     <>
+      {/*BrowserRouter: Container de rotas
+    (precisa envolver todos os componentes do App) */}
       <BrowserRouter>
         <Cabecalho />
 
+        {/* Switch: mecanismo para troca/alternativa de rotas */}
         <Switch>
+          {/* Route: configuração de cada rota 
+          (qual caminho, qual componente) 
+          
+          Outra sintaxe de Route: 
+          <Route path="/produtos" componente{Produto} />
+          */}
           <Route exact path="/">
             <Home />
           </Route>
