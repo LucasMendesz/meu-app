@@ -1,12 +1,18 @@
 import Cabecalho from "./Components/layout/Cabecalho";
-import Conteudo from "./Components/layout/Conteudo";
+import Home from "./pages/Home";
+import Produtos from "./pages/Produtos";
+import Servicos from "./pages/Servicos";
 import Rodape from "./Components/layout/Rodape";
 const App = () => {
   return (
     <>
       <Cabecalho />
 
-      <Conteudo />
+      <Home />
+
+      <Produtos />
+
+      <Servicos />
 
       <Rodape />
     </>
