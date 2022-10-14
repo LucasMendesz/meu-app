@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Cabecalho from "./Components/layout/Cabecalho";
 import Home from "./pages/Home";
 import Produtos from "./pages/Produtos";
@@ -6,15 +7,27 @@ import Rodape from "./Components/layout/Rodape";
 const App = () => {
   return (
     <>
-      <Cabecalho />
+      <BrowserRouter>
+        <Cabecalho />
 
-      <Home />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-      <Produtos />
+          <Route exact path="/produtos">
+            <Produtos />
+          </Route>
 
-      <Servicos />
+          <Route exact path="/servicos">
+            <Servicos />
+          </Route>
 
-      <Rodape />
+          <Route>
+            <Rodape />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </>
   );
 };
